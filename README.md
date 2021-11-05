@@ -18,7 +18,8 @@ git submodule update
 mkdir build
 cd build
 cmake ..
-cmake --build . -j
+cmake --build . --config Debug
+//cmake --build . -j
 ```
 
 最后四步（从 `mkdir build` 到 `cmake --build …`）也可以进入到子目录下进行，只构建那一部分的代码。
